@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Formulário</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="decoracao">
+          <div class="imagemLogin">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/5818/5818561.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="entrada">
+          <h1 class="saudacao">Olá! Seja bem-vindo de volta!</h1>
+          <br />
+          <form id="formLogin">
+            <input
+              id="nome"
+              label="Nome"
+              variant="outlined"
+              placeholder="Nome de usuário"
+            />
+
+            <input
+              id="senha"
+              label="Password"
+              type="password"
+              autocomplete="current-password"
+              placeholder="Senha"
+            />
+            <button variant="contained">Login</button>
+          </form>
+          <p id="mensagem"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="script.js"></script>
+</html>
