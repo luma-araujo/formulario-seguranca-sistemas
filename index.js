@@ -6,17 +6,17 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Usuário e senha em hash
+// Armazenamento do usuário e da senha em hash
 const usuarios = [
   {
     nome: 'luma',
-    senhaHash: '$2b$10$zoGuxYv7C0dc/ahVxEatNuzhoyjkNxTJDCGGcUPX9a8f7hVEcm/wa',
+    senhaHash: '$2b$10$K0Y9f85qiUY3YvglsunuV.2Xlt4CE5X99Y3jw94C33k6ie0E5c8hC',
   },
 ];
 
 app.post('/login', async (req, res) => {
-  console.log('Recebido:', req.body); // para debug
-
+  console.log('Recebido:', req.body); // Para teste de funcionamento, executado no terminal exibindo o sucesso do login ou com erro
+ 
   const { nome, senha } = req.body;
 
   const usuario = usuarios.find((u) => u.nome === nome);
